@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Grid</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/web3.min.js"></script>
+    <script src="/static/js/pixel_grid.js"></script>
+    <script src="/static/js/pixel_buy.js"></script>
+    <script src="/static/js/color_palette.js"></script>
+</head>
+<body>
+    <canvas id="pixel-grid" width="1000" height="1000"></canvas>
+    <button id="buy-button">Buy Pixel</button>
+    <script>
+        drawGrid();
+        document.getElementById('pixel-grid').addEventListener('click', selectPixel);
+        document.getElementById('buy-button').addEventListener('click', buyPixel);
+    </script>
+</body>
+</html>
